@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
-import { ExternalLink, Github, Target, Wrench, CheckCircle } from 'lucide-react';
+import { ExternalLink, Target, Wrench, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 import { projects } from '../mock/mockData';
 
 const Projects = () => {
