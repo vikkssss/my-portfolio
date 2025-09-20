@@ -63,9 +63,13 @@ export const projects = [
     status: "MVP built",
     nextSteps: "Auth + CSV export",
     outcomeGoal: "Help users cut monthly spend by 10–15%",
-    image: "https://images.unsplash.com/photo-1638845604906-6c87bd9ddd01",
-    demoLink: "#",
-    githubLink: "#"
+    demoImages: [
+      "https://customer-assets.emergentagent.com/job_code-decoder-11/artifacts/eed7sa5z_Screenshot%202025-09-20%20214034.png",
+      "https://customer-assets.emergentagent.com/job_code-decoder-11/artifacts/fu5qz2hg_Screenshot%202025-09-20%20214114.png",
+      "https://customer-assets.emergentagent.com/job_code-decoder-11/artifacts/5dzq7nw0_Screenshot%202025-09-20%20214301.png"
+    ],
+    image: "https://customer-assets.emergentagent.com/job_code-decoder-11/artifacts/eed7sa5z_Screenshot%202025-09-20%20214034.png",
+    demoLink: "#"
   },
   {
     id: 2,
@@ -77,8 +81,7 @@ export const projects = [
     nextSteps: "Journaling analytics, streaks, AI integration",
     outcomeGoal: "Improve study consistency and reduce burnout signals",
     image: "https://images.unsplash.com/photo-1623824204241-f851d3bcfaf5",
-    demoLink: "#",
-    githubLink: "#"
+    demoLink: "#"
   }
 ];
 
