@@ -80,8 +80,13 @@ export const projects = [
     status: "Frontend complete",
     nextSteps: "Journaling analytics, streaks, AI integration",
     outcomeGoal: "Improve study consistency and reduce burnout signals",
-    image: "https://images.unsplash.com/photo-1623824204241-f851d3bcfaf5",
-    demoLink: "#"
+    demoImages: [
+      "https://customer-assets.emergentagent.com/job_code-decoder-11/artifacts/vii4i9n3_Screenshot%202025-09-20%20215352.png",
+      "https://customer-assets.emergentagent.com/job_code-decoder-11/artifacts/gl52g11u_Screenshot%202025-09-20%20215439.png"
+    ],
+    image: "https://customer-assets.emergentagent.com/job_code-decoder-11/artifacts/vii4i9n3_Screenshot%202025-09-20%20215352.png",
+    demoLink: "#",
+    githubLink: "https://github.com/vikksssss"
   }
 ];
 
