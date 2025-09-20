@@ -33,13 +33,13 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-[#FBF5E5]/95 backdrop-blur-md shadow-sm' : 'bg-[#FBF5E5]'
+      isScrolled ? 'bg-[#1a1a1a]/95 backdrop-blur-md shadow-lg border-b border-[#A35C7A]/20' : 'bg-[#1a1a1a]'
     }`}>
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div 
-            className="text-xl font-bold text-[#212121] cursor-pointer hover:text-[#A35C7A] transition-colors"
+            className="text-xl font-bold text-[#FBF5E5] cursor-pointer hover:text-[#C890A7] transition-colors"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
             Veeksha Aluvala
@@ -51,15 +51,15 @@ const Header = () => {
               <button
                 key={link.href}
                 onClick={() => scrollToSection(link.href)}
-                className="text-[#212121] hover:text-[#A35C7A] transition-colors font-medium relative group"
+                className="text-[#FBF5E5] hover:text-[#C890A7] transition-colors font-medium relative group"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#A35C7A] transition-all group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#C890A7] transition-all group-hover:w-full"></span>
               </button>
             ))}
             <Button 
               onClick={() => scrollToSection('#contact')}
-              className="bg-[#A35C7A] hover:bg-[#C890A7] text-white px-6 py-2"
+              className="bg-[#A35C7A] hover:bg-[#C890A7] text-white px-6 py-2 border border-[#A35C7A] hover:border-[#C890A7]"
             >
               Contact Me
             </Button>
@@ -67,7 +67,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-[#212121] p-2"
+            className="md:hidden text-[#FBF5E5] p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -77,13 +77,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-[#C890A7]/20">
+          <nav className="md:hidden mt-4 pb-4 border-t border-[#A35C7A]/20">
             <div className="flex flex-col space-y-4 pt-4">
               {navLinks.map((link) => (
                 <button
                   key={link.href}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-[#212121] hover:text-[#A35C7A] transition-colors font-medium text-left"
+                  className="text-[#FBF5E5] hover:text-[#C890A7] transition-colors font-medium text-left"
                 >
                   {link.label}
                 </button>
