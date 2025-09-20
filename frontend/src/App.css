@@ -1,15 +1,21 @@
+/* Dark mode base styling */
+body {
+    background-color: #0f0f11;
+    color: #FBF5E5;
+}
+
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar for dark mode */
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #FBF5E5;
+    background: #1a1a1a;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -42,6 +48,15 @@ html {
     }
 }
 
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(196, 144, 167, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(196, 144, 167, 0.6);
+    }
+}
+
 /* Animation classes */
 .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out;
@@ -51,10 +66,14 @@ html {
     animation: float 3s ease-in-out infinite;
 }
 
-/* Custom focus styles */
+.animate-glow {
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* Custom focus styles for dark mode */
 .focus-ring:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #A35C7A;
+    box-shadow: 0 0 0 2px #C890A7;
 }
 
 /* Pixel-inspired subtle effects */
@@ -68,13 +87,31 @@ button, a, input, textarea {
     transition: all 0.3s ease;
 }
 
-/* Custom gradient backgrounds */
+/* Dark mode gradient backgrounds */
 .gradient-bg-primary {
-    background: linear-gradient(135deg, #FBF5E5 0%, #C890A7 100%);
+    background: linear-gradient(135deg, #0f0f11 0%, #1a1a1a 100%);
 }
 
 .gradient-bg-secondary {
-    background: linear-gradient(135deg, #C890A7 0%, #A35C7A 100%);
+    background: linear-gradient(135deg, #A35C7A 0%, #C890A7 100%);
+}
+
+/* Glass morphism effect for dark mode */
+.glass-dark {
+    background: rgba(42, 42, 42, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(196, 144, 167, 0.2);
+}
+
+/* Card hover effects for dark mode */
+.card-hover-dark:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(163, 91, 122, 0.3);
+}
+
+/* Text glow effect */
+.text-glow {
+    text-shadow: 0 0 10px rgba(196, 144, 167, 0.5);
 }
 
 /* Responsive text sizes */
@@ -96,4 +133,33 @@ button, a, input, textarea {
     .text-responsive-lg {
         font-size: 2rem;
     }
+}
+
+/* Selection styling for dark mode */
+::selection {
+    background: #C890A7;
+    color: #0f0f11;
+}
+
+/* Neon border effect */
+.neon-border {
+    border: 1px solid #C890A7;
+    box-shadow: 0 0 5px rgba(196, 144, 167, 0.3), 
+                inset 0 0 5px rgba(196, 144, 167, 0.1);
+}
+
+/* Input placeholder styling for dark mode */
+input::placeholder,
+textarea::placeholder {
+    color: rgba(251, 245, 229, 0.5);
+}
+
+/* Dark mode specific adjustments */
+.dark-mode-card {
+    background: #2a2a2a;
+    border: 1px solid rgba(163, 91, 122, 0.2);
+}
+
+.dark-mode-card:hover {
+    border-color: rgba(196, 144, 167, 0.4);
 }
