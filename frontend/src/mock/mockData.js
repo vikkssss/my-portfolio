@@ -111,7 +111,8 @@ export const education = {
 
 export const socialLinks = [
   { name: "LinkedIn", url: "https://linkedin.com/in/veeksha-aluvala-0b7452361/", icon: "Linkedin" },
-  { name: "GitHub", url: "#", icon: "Github" },
+  { name: "GitHub", url: "https://github.com/vikksssss", icon: "Github" },
+  { name: "Instagram", url: "https://www.instagram.com/p0tat0killer/", icon: "Instagram", description: "Arts & Creative Work" },
   { name: "Email", url: "mailto:vikki30.aluvala@gmail.com", icon: "Mail" }
 ];
 
