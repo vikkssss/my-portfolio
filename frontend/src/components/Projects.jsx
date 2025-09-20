@@ -6,29 +6,81 @@ import { ExternalLink, Target, Wrench, CheckCircle, ChevronLeft, ChevronRight } 
 import { projects } from '../mock/mockData';
 
 const Projects = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState({});
+
+  const nextImage = (projectId, maxImages) => {
+    setCurrentImageIndex(prev => ({
+      ...prev,
+      [projectId]: ((prev[projectId] || 0) + 1) % maxImages
+    }));
+  };
+
+  const prevImage = (projectId, maxImages) => {
+    setCurrentImageIndex(prev => ({
+      ...prev,
+      [projectId]: ((prev[projectId] || 0) - 1 + maxImages) % maxImages
+    }));
+  };
+
   return (
     <section id="projects" className="py-20 px-6 bg-[#1a1a1a]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#FBF5E5] mb-4">Featured Projects</h2>
-          <div className="w-20 h-1 bg-[#A35C7A] mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-[#8A5A94] mx-auto mb-6"></div>
           <p className="text-xl text-[#FBF5E5]/70 max-w-3xl mx-auto">
             Building solutions that make a difference, one line of code at a time
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
-          {projects.map((project) => (
-            <Card key={project.id} className="border border-[#A35C7A]/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden bg-[#2a2a2a]">
-              {/* Project Image */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-[#0f0f11]/40 hover:bg-[#0f0f11]/20 transition-colors"></div>
-              </div>
+          {projects.map((project) => {
+            const hasMultipleImages = project.demoImages && project.demoImages.length > 1;
+            const currentIndex = currentImageIndex[project.id] || 0;
+            const currentImage = hasMultipleImages ? project.demoImages[currentIndex] : project.image;
+            
+            return (
+              <Card key={project.id} className="border border-[#8A5A94]/20 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden bg-[#2a2a2a]">
+                {/* Project Image Carousel */}
+                <div className="relative h-64 overflow-hidden group">
+                  <img
+                    src={currentImage}
+                    alt={`${project.title} - Demo ${currentIndex + 1}`}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-[#0f0f11]/30 hover:bg-[#0f0f11]/10 transition-colors"></div>
+                  
+                  {/* Image Navigation */}
+                  {hasMultipleImages && (
+                    <>
+                      <button
+                        onClick={() => prevImage(project.id, project.demoImages.length)}
+                        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-[#8A5A94]/80 hover:bg-[#8A5A94] text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <ChevronLeft size={20} />
+                      </button>
+                      <button
+                        onClick={() => nextImage(project.id, project.demoImages.length)}
+                        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#8A5A94]/80 hover:bg-[#8A5A94] text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <ChevronRight size={20} />
+                      </button>
+                      
+                      {/* Image Indicators */}
+                      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        {project.demoImages.map((_, index) => (
+                          <button
+                            key={index}
+                            onClick={() => setCurrentImageIndex(prev => ({ ...prev, [project.id]: index }))}
+                            className={`w-2 h-2 rounded-full transition-colors ${
+                              index === currentIndex ? 'bg-[#A885C4]' : 'bg-white/50'
+                            }`}
+                          />
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
 
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-bold text-[#FBF5E5] mb-2">
