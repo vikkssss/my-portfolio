@@ -86,25 +86,27 @@ const Education = () => {
 
         {/* Academic Stats */}
         <div className="mt-16">
-          <Card className="border border-[#8A5A94]/20 shadow-lg bg-[#2a2a2a]">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-[#FBF5E5] mb-8 text-center">Academic Highlights</h3>
+          <Card className="border border-[#8A5A94]/20 shadow-lg bg-[#2a2a2a] hover:shadow-2xl transition-all duration-500 group overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-[#8A5A94]/5 via-[#A885C4]/5 to-[#8A5A94]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <CardContent className="p-8 relative z-10">
+              <h3 className="text-2xl font-bold text-[#FBF5E5] mb-8 text-center group-hover:scale-105 transition-transform duration-300">Academic Highlights</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div className="p-6 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20">
-                  <div className="text-3xl font-bold text-[#A885C4] mb-2">2nd</div>
-                  <div className="text-[#FBF5E5]/70">Year Student</div>
+                <div className="p-6 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20 hover:bg-[#4a4a4a] hover:border-[#A885C4]/40 hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer group/card">
+                  <div className="text-3xl font-bold text-[#A885C4] mb-2 group-hover/card:scale-110 transition-transform duration-300">2nd</div>
+                  <div className="text-[#FBF5E5]/70 group-hover/card:text-[#FBF5E5] transition-colors duration-300">Year Student</div>
                 </div>
-                <div className="p-6 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20">
-                  <div className="text-3xl font-bold text-[#A885C4] mb-2">6+</div>
-                  <div className="text-[#FBF5E5]/70">Core Subjects</div>
+                <div className="p-6 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20 hover:bg-[#4a4a4a] hover:border-[#A885C4]/40 hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer group/card" style={{transitionDelay: "100ms"}}>
+                  <div className="text-3xl font-bold text-[#A885C4] mb-2 group-hover/card:scale-110 transition-transform duration-300">6+</div>
+                  <div className="text-[#FBF5E5]/70 group-hover/card:text-[#FBF5E5] transition-colors duration-300">Core Subjects</div>
                 </div>
-                <div className="p-6 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20">
-                  <div className="text-3xl font-bold text-[#A885C4] mb-2">3</div>
-                  <div className="text-[#FBF5E5]/70">Major Achievements</div>
+                <div className="p-6 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20 hover:bg-[#4a4a4a] hover:border-[#A885C4]/40 hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer group/card" style={{transitionDelay: "200ms"}}>
+                  <div className="text-3xl font-bold text-[#A885C4] mb-2 group-hover/card:scale-110 transition-transform duration-300">3</div>
+                  <div className="text-[#FBF5E5]/70 group-hover/card:text-[#FBF5E5] transition-colors duration-300">Activities</div>
                 </div>
-                <div className="p-6 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20 hover:bg-[#4a4a4a] hover:border-[#A885C4]/40 hover:scale-105 transition-all duration-300 cursor-pointer group">
-                  <div className="text-3xl font-bold text-[#A885C4] mb-2 group-hover:scale-110 transition-transform duration-300">9.1</div>
-                  <div className="text-[#FBF5E5]/70 group-hover:text-[#FBF5E5] transition-colors duration-300">CGPA</div>
+                <div className="p-6 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20 hover:bg-[#4a4a4a] hover:border-[#A885C4]/40 hover:scale-105 hover:-translate-y-2 transition-all duration-300 cursor-pointer group/card relative overflow-hidden" style={{transitionDelay: "300ms"}}>
+                  <div className="text-3xl font-bold text-[#A885C4] mb-2 group-hover/card:scale-110 transition-transform duration-300">9.1</div>
+                  <div className="text-[#FBF5E5]/70 group-hover/card:text-[#FBF5E5] transition-colors duration-300">CGPA</div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#8A5A94]/20 to-[#A885C4]/20 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300"></div>
                 </div>
               </div>
             </CardContent>
