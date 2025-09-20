@@ -120,16 +120,16 @@ const Projects = () => {
 
                 {/* Status & Next Steps */}
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="p-3 bg-[#3a3a3a] rounded-lg border border-[#A35C7A]/20">
-                    <div className="flex items-center text-[#C890A7] mb-1">
+                  <div className="p-3 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20">
+                    <div className="flex items-center text-[#A885C4] mb-1">
                       <Wrench size={14} className="mr-2" />
                       <span className="font-semibold text-sm">Current Status</span>
                     </div>
                     <p className="text-[#FBF5E5] text-sm">{project.status}</p>
                   </div>
                   
-                  <div className="p-3 bg-[#4a4a4a] rounded-lg border border-[#C890A7]/20">
-                    <div className="flex items-center text-[#C890A7] mb-1">
+                  <div className="p-3 bg-[#4a4a4a] rounded-lg border border-[#A885C4]/20">
+                    <div className="flex items-center text-[#A885C4] mb-1">
                       <Target size={14} className="mr-2" />
                       <span className="font-semibold text-sm">Next Steps</span>
                     </div>
@@ -138,28 +138,20 @@ const Projects = () => {
                 </div>
 
                 {/* Outcome Goal */}
-                <div className="p-4 bg-gradient-to-r from-[#A35C7A]/20 to-[#C890A7]/20 rounded-lg border-l-4 border-[#A35C7A]">
+                <div className="p-4 bg-gradient-to-r from-[#8A5A94]/20 to-[#A885C4]/20 rounded-lg border-l-4 border-[#8A5A94]">
                   <h4 className="font-semibold text-[#FBF5E5] mb-2">Impact Goal</h4>
                   <p className="text-[#FBF5E5]/80 text-sm">{project.outcomeGoal}</p>
                 </div>
 
-                {/* Action Buttons */}
-                <div className="flex gap-3 pt-4">
+                {/* Action Button */}
+                <div className="pt-4">
                   <Button 
                     variant="outline"
-                    className="flex-1 border-[#C890A7] text-[#C890A7] hover:bg-[#C890A7] hover:text-[#0f0f11] bg-transparent"
+                    className="w-full border-[#A885C4] text-[#A885C4] hover:bg-[#A885C4] hover:text-[#0f0f11] bg-transparent"
                     onClick={() => window.open(project.demoLink, '_blank')}
                   >
                     <ExternalLink size={16} className="mr-2" />
-                    View Demo
-                  </Button>
-                  <Button 
-                    variant="outline"
-                    className="flex-1 border-[#A35C7A] text-[#A35C7A] hover:bg-[#A35C7A] hover:text-white bg-transparent"
-                    onClick={() => window.open(project.githubLink, '_blank')}
-                  >
-                    <Github size={16} className="mr-2" />
-                    Code
+                    View Live Demo
                   </Button>
                 </div>
               </CardContent>
