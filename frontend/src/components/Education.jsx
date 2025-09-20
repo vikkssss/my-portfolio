@@ -41,17 +41,21 @@ const Education = () => {
           </Card>
 
           {/* Coursework */}
-          <Card className="md:col-span-1 border border-[#8A5A94]/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2a2a2a]">
-            <CardHeader className="bg-[#A885C4] text-white border-b border-[#8A5A94]/20">
+          <Card className="md:col-span-1 border border-[#8A5A94]/20 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 bg-[#2a2a2a] group">
+            <CardHeader className="bg-[#A885C4] text-white border-b border-[#8A5A94]/20 group-hover:bg-[#8A5A94] transition-colors duration-300">
               <div className="flex items-center">
-                <BookOpen className="mr-3" size={24} />
+                <BookOpen className="mr-3 group-hover:rotate-6 transition-transform duration-300" size={24} />
                 <CardTitle className="text-lg">Relevant Coursework</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="p-6">
               <div className="space-y-3">
                 {education.relevantCoursework.map((course, index) => (
-                  <div key={index} className="p-2 bg-[#3a3a3a] rounded-lg border-l-3 border-[#A885C4]">
+                  <div 
+                    key={index} 
+                    className="p-2 bg-[#3a3a3a] rounded-lg border-l-3 border-[#A885C4] hover:bg-[#4a4a4a] hover:border-l-4 hover:translate-x-2 transition-all duration-300 cursor-pointer"
+                    style={{transitionDelay: `${index * 50}ms`}}
+                  >
                     <span className="text-[#FBF5E5] text-sm font-medium">{course}</span>
                   </div>
                 ))}
