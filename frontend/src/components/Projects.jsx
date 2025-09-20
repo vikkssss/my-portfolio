@@ -91,7 +91,7 @@ const Projects = () => {
                     <Badge 
                       key={index}
                       variant="secondary" 
-                      className="bg-[#3a3a3a] text-[#C890A7] border border-[#A35C7A]/30"
+                      className="bg-[#3a3a3a] text-[#A885C4] border border-[#8A5A94]/30"
                     >
                       {tech}
                     </Badge>
