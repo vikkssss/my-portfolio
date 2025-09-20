@@ -143,8 +143,8 @@ const Projects = () => {
                   <p className="text-[#FBF5E5]/80 text-sm">{project.outcomeGoal}</p>
                 </div>
 
-                {/* Action Button */}
-                <div className="pt-4">
+                {/* Action Buttons */}
+                <div className="pt-4 space-y-3">
                   <Button 
                     variant="outline"
                     className="w-full border-[#A885C4] text-[#A885C4] hover:bg-[#A885C4] hover:text-[#0f0f11] bg-transparent"
@@ -153,6 +153,17 @@ const Projects = () => {
                     <ExternalLink size={16} className="mr-2" />
                     View Live Demo
                   </Button>
+                  
+                  {project.githubLink && (
+                    <Button 
+                      variant="outline"
+                      className="w-full border-[#8A5A94] text-[#8A5A94] hover:bg-[#8A5A94] hover:text-white bg-transparent"
+                      onClick={() => window.open(project.githubLink, '_blank')}
+                    >
+                      <Github size={16} className="mr-2" />
+                      View Source Code
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
