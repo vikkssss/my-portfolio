@@ -15,14 +15,14 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#0f0f11] text-white py-16 px-6 border-t border-[#A35C7A]/20">
+    <footer className="bg-[#0f0f11] text-white py-16 px-6 border-t border-[#8A5A94]/20">
       <div className="max-w-6xl mx-auto">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand Section */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-[#FBF5E5]">{personalInfo.name}</h3>
-            <p className="text-[#C890A7] font-medium">
+            <p className="text-[#A885C4] font-medium">
               {personalInfo.tagline}
             </p>
             <p className="text-[#FBF5E5]/60 text-sm">
@@ -37,31 +37,31 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-2">
               <button 
                 onClick={() => document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-[#FBF5E5]/70 hover:text-[#C890A7] transition-colors text-left"
+                className="text-[#FBF5E5]/70 hover:text-[#A885C4] transition-colors text-left"
               >
                 About
               </button>
               <button 
                 onClick={() => document.querySelector('#skills')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-[#FBF5E5]/70 hover:text-[#C890A7] transition-colors text-left"
+                className="text-[#FBF5E5]/70 hover:text-[#A885C4] transition-colors text-left"
               >
                 Skills
               </button>
               <button 
                 onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-[#FBF5E5]/70 hover:text-[#C890A7] transition-colors text-left"
+                className="text-[#FBF5E5]/70 hover:text-[#A885C4] transition-colors text-left"
               >
                 Projects
               </button>
               <button 
                 onClick={() => document.querySelector('#education')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-[#FBF5E5]/70 hover:text-[#C890A7] transition-colors text-left"
+                className="text-[#FBF5E5]/70 hover:text-[#A885C4] transition-colors text-left"
               >
                 Education
               </button>
               <button 
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-[#FBF5E5]/70 hover:text-[#C890A7] transition-colors text-left"
+                className="text-[#FBF5E5]/70 hover:text-[#A885C4] transition-colors text-left"
               >
                 Contact
               </button>
@@ -80,7 +80,7 @@ const Footer = () => {
                       key={index}
                       variant="outline"
                       size="sm"
-                      className="border-[#C890A7] text-[#C890A7] hover:bg-[#C890A7] hover:text-[#0f0f11] p-2 bg-transparent"
+                      className="border-[#A885C4] text-[#A885C4] hover:bg-[#A885C4] hover:text-[#0f0f11] p-2 bg-transparent"
                       onClick={() => window.open(social.url, '_blank')}
                     >
                       <IconComponent size={18} />
@@ -93,7 +93,7 @@ const Footer = () => {
             <div>
               <Button 
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-[#A35C7A] hover:bg-[#C890A7] text-white w-full border border-[#A35C7A] hover:border-[#C890A7]"
+                className="bg-[#8A5A94] hover:bg-[#A885C4] text-white w-full border border-[#8A5A94] hover:border-[#A885C4]"
               >
                 Get In Touch
               </Button>
@@ -102,10 +102,10 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[#A35C7A]/20 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-[#8A5A94]/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-1 text-[#FBF5E5]/60 mb-4 md:mb-0">
             <span>Made with</span>
-            <Heart className="text-[#C890A7] fill-current" size={16} />
+            <Heart className="text-[#A885C4] fill-current" size={16} />
             <span>by {personalInfo.name}</span>
           </div>
 
@@ -113,7 +113,7 @@ const Footer = () => {
             <span>© 2024 All rights reserved</span>
             <button
               onClick={scrollToTop}
-              className="flex items-center space-x-1 text-[#C890A7] hover:text-[#FBF5E5] transition-colors"
+              className="flex items-center space-x-1 text-[#A885C4] hover:text-[#FBF5E5] transition-colors"
             >
               <ArrowUp size={16} />
               <span>Back to top</span>
@@ -122,7 +122,7 @@ const Footer = () => {
         </div>
 
         {/* Fun Footer Message */}
-        <div className="text-center mt-8 pt-8 border-t border-[#A35C7A]/30">
+        <div className="text-center mt-8 pt-8 border-t border-[#8A5A94]/30">
           <p className="text-[#FBF5E5]/50 text-sm">
             "The best way to predict the future is to create it." - Currently creating mine, one commit at a time.
           </p>

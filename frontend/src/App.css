@@ -19,12 +19,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #C890A7;
+    background: #A885C4;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #A35C7A;
+    background: #8A5A94;
 }
 
 /* Subtle animations */
@@ -50,10 +50,10 @@ html {
 
 @keyframes glow {
     0%, 100% {
-        box-shadow: 0 0 5px rgba(196, 144, 167, 0.3);
+        box-shadow: 0 0 5px rgba(168, 133, 196, 0.3);
     }
     50% {
-        box-shadow: 0 0 20px rgba(196, 144, 167, 0.6);
+        box-shadow: 0 0 20px rgba(168, 133, 196, 0.6);
     }
 }
 
@@ -73,13 +73,13 @@ html {
 /* Custom focus styles for dark mode */
 .focus-ring:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #C890A7;
+    box-shadow: 0 0 0 2px #A885C4;
 }
 
 /* Pixel-inspired subtle effects */
 .pixel-border {
     border: 2px solid;
-    border-image: linear-gradient(45deg, #A35C7A, #C890A7) 1;
+    border-image: linear-gradient(45deg, #8A5A94, #A885C4) 1;
 }
 
 /* Smooth transitions for all interactive elements */
@@ -93,25 +93,25 @@ button, a, input, textarea {
 }
 
 .gradient-bg-secondary {
-    background: linear-gradient(135deg, #A35C7A 0%, #C890A7 100%);
+    background: linear-gradient(135deg, #8A5A94 0%, #A885C4 100%);
 }
 
 /* Glass morphism effect for dark mode */
 .glass-dark {
     background: rgba(42, 42, 42, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(196, 144, 167, 0.2);
+    border: 1px solid rgba(168, 133, 196, 0.2);
 }
 
 /* Card hover effects for dark mode */
 .card-hover-dark:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(163, 91, 122, 0.3);
+    box-shadow: 0 10px 30px rgba(138, 90, 148, 0.3);
 }
 
 /* Text glow effect */
 .text-glow {
-    text-shadow: 0 0 10px rgba(196, 144, 167, 0.5);
+    text-shadow: 0 0 10px rgba(168, 133, 196, 0.5);
 }
 
 /* Responsive text sizes */
@@ -137,15 +137,15 @@ button, a, input, textarea {
 
 /* Selection styling for dark mode */
 ::selection {
-    background: #C890A7;
+    background: #A885C4;
     color: #0f0f11;
 }
 
 /* Neon border effect */
 .neon-border {
-    border: 1px solid #C890A7;
-    box-shadow: 0 0 5px rgba(196, 144, 167, 0.3), 
-                inset 0 0 5px rgba(196, 144, 167, 0.1);
+    border: 1px solid #A885C4;
+    box-shadow: 0 0 5px rgba(168, 133, 196, 0.3), 
+                inset 0 0 5px rgba(168, 133, 196, 0.1);
 }
 
 /* Input placeholder styling for dark mode */
@@ -157,9 +157,9 @@ textarea::placeholder {
 /* Dark mode specific adjustments */
 .dark-mode-card {
     background: #2a2a2a;
-    border: 1px solid rgba(163, 91, 122, 0.2);
+    border: 1px solid rgba(138, 90, 148, 0.2);
 }
 
 .dark-mode-card:hover {
-    border-color: rgba(196, 144, 167, 0.4);
+    border-color: rgba(168, 133, 196, 0.4);
 }

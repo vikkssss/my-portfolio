@@ -46,7 +46,7 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-[#FBF5E5] mb-4">Let's Connect</h2>
-          <div className="w-20 h-1 bg-[#A35C7A] mx-auto mb-6"></div>
+          <div className="w-20 h-1 bg-[#8A5A94] mx-auto mb-6"></div>
           <p className="text-xl text-[#FBF5E5]/70 max-w-3xl mx-auto">
             Have a project idea? Want to collaborate? Let's build something amazing together!
           </p>
@@ -54,10 +54,10 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <Card className="border border-[#A35C7A]/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2a2a2a]">
+          <Card className="border border-[#8A5A94]/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2a2a2a]">
             <CardHeader>
               <CardTitle className="flex items-center text-2xl font-bold text-[#FBF5E5]">
-                <Send className="mr-3 text-[#C890A7]" size={24} />
+                <Send className="mr-3 text-[#A885C4]" size={24} />
                 Send Me a Message
               </CardTitle>
             </CardHeader>
@@ -71,7 +71,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="mt-1 border-[#A35C7A]/30 focus:border-[#C890A7] bg-[#3a3a3a] text-[#FBF5E5]"
+                      className="mt-1 border-[#8A5A94]/30 focus:border-[#A885C4] bg-[#3a3a3a] text-[#FBF5E5]"
                       placeholder="Your name"
                       required
                     />
@@ -84,7 +84,7 @@ const Contact = () => {
                       type="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="mt-1 border-[#A35C7A]/30 focus:border-[#C890A7] bg-[#3a3a3a] text-[#FBF5E5]"
+                      className="mt-1 border-[#8A5A94]/30 focus:border-[#A885C4] bg-[#3a3a3a] text-[#FBF5E5]"
                       placeholder="your@email.com"
                       required
                     />
@@ -98,7 +98,7 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleInputChange}
-                    className="mt-1 border-[#A35C7A]/30 focus:border-[#C890A7] bg-[#3a3a3a] text-[#FBF5E5]"
+                    className="mt-1 border-[#8A5A94]/30 focus:border-[#A885C4] bg-[#3a3a3a] text-[#FBF5E5]"
                     placeholder="What's this about?"
                     required
                   />
@@ -111,7 +111,7 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="mt-1 border-[#A35C7A]/30 focus:border-[#C890A7] min-h-32 bg-[#3a3a3a] text-[#FBF5E5]"
+                    className="mt-1 border-[#8A5A94]/30 focus:border-[#A885C4] min-h-32 bg-[#3a3a3a] text-[#FBF5E5]"
                     placeholder="Tell me about your project or idea..."
                     required
                   />
@@ -120,7 +120,7 @@ const Contact = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#A35C7A] hover:bg-[#C890A7] text-white py-3 text-lg font-medium border border-[#A35C7A] hover:border-[#C890A7]"
+                  className="w-full bg-[#8A5A94] hover:bg-[#A885C4] text-white py-3 text-lg font-medium border border-[#8A5A94] hover:border-[#A885C4]"
                 >
                   {isSubmitting ? (
                     <>
@@ -141,44 +141,44 @@ const Contact = () => {
           {/* Contact Info & Calendar */}
           <div className="space-y-8">
             {/* Contact Info */}
-            <Card className="border border-[#A35C7A]/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2a2a2a]">
+            <Card className="border border-[#8A5A94]/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2a2a2a]">
               <CardHeader>
                 <CardTitle className="flex items-center text-2xl font-bold text-[#FBF5E5]">
-                  <Mail className="mr-3 text-[#C890A7]" size={24} />
+                  <Mail className="mr-3 text-[#A885C4]" size={24} />
                   Get In Touch
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="flex items-center p-4 bg-[#3a3a3a] rounded-lg hover:bg-[#4a4a4a] transition-colors border border-[#A35C7A]/20">
-                  <Mail className="text-[#C890A7] mr-4" size={20} />
+                <div className="flex items-center p-4 bg-[#3a3a3a] rounded-lg hover:bg-[#4a4a4a] transition-colors border border-[#8A5A94]/20">
+                  <Mail className="text-[#A885C4] mr-4" size={20} />
                   <div>
                     <p className="font-medium text-[#FBF5E5]">Email</p>
                     <a 
                       href={`mailto:${personalInfo.email}`}
-                      className="text-[#C890A7] hover:underline"
+                      className="text-[#A885C4] hover:underline"
                     >
                       {personalInfo.email}
                     </a>
                   </div>
                 </div>
                 
-                <div className="flex items-center p-4 bg-[#3a3a3a] rounded-lg hover:bg-[#4a4a4a] transition-colors border border-[#A35C7A]/20">
-                  <Linkedin className="text-[#C890A7] mr-4" size={20} />
+                <div className="flex items-center p-4 bg-[#3a3a3a] rounded-lg hover:bg-[#4a4a4a] transition-colors border border-[#8A5A94]/20">
+                  <Linkedin className="text-[#A885C4] mr-4" size={20} />
                   <div>
                     <p className="font-medium text-[#FBF5E5]">LinkedIn</p>
                     <a 
                       href={`https://${personalInfo.linkedin}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#C890A7] hover:underline"
+                      className="text-[#A885C4] hover:underline"
                     >
                       {personalInfo.linkedin}
                     </a>
                   </div>
                 </div>
                 
-                <div className="flex items-center p-4 bg-[#3a3a3a] rounded-lg border border-[#A35C7A]/20">
-                  <MapPin className="text-[#C890A7] mr-4" size={20} />
+                <div className="flex items-center p-4 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20">
+                  <MapPin className="text-[#A885C4] mr-4" size={20} />
                   <div>
                     <p className="font-medium text-[#FBF5E5]">Location</p>
                     <p className="text-[#FBF5E5]/70">Tamil Nadu, India</p>
@@ -188,23 +188,23 @@ const Contact = () => {
             </Card>
 
             {/* Calendar Placeholder */}
-            <Card className="border border-[#A35C7A]/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2a2a2a]">
+            <Card className="border border-[#8A5A94]/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2a2a2a]">
               <CardHeader>
                 <CardTitle className="flex items-center text-2xl font-bold text-[#FBF5E5]">
-                  <Calendar className="mr-3 text-[#C890A7]" size={24} />
+                  <Calendar className="mr-3 text-[#A885C4]" size={24} />
                   Schedule a Call
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-center p-8 bg-gradient-to-br from-[#3a3a3a] to-[#4a4a4a] rounded-lg border border-[#A35C7A]/20">
-                  <Calendar className="mx-auto text-[#C890A7] mb-4" size={48} />
+                <div className="text-center p-8 bg-gradient-to-br from-[#3a3a3a] to-[#4a4a4a] rounded-lg border border-[#8A5A94]/20">
+                  <Calendar className="mx-auto text-[#A885C4] mb-4" size={48} />
                   <h3 className="text-lg font-bold text-[#FBF5E5] mb-2">Coming Soon!</h3>
                   <p className="text-[#FBF5E5]/70 mb-4">
                     Calendar integration will be available soon for easy scheduling.
                   </p>
                   <Button 
                     variant="outline"
-                    className="border-[#C890A7] text-[#C890A7] hover:bg-[#C890A7] hover:text-[#0f0f11] bg-transparent"
+                    className="border-[#A885C4] text-[#A885C4] hover:bg-[#A885C4] hover:text-[#0f0f11] bg-transparent"
                     onClick={() => window.open(`mailto:${personalInfo.email}?subject=Let's Schedule a Call`, '_blank')}
                   >
                     Email to Schedule
