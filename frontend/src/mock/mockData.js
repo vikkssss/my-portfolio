@@ -6,7 +6,7 @@ export const personalInfo = {
   email: "vikki30.aluvala@gmail.com",
   linkedin: "linkedin.com/in/veeksha-aluvala-0b7452361/",
   profileImages: [
-    "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e",
+    "https://customer-assets.emergentagent.com/job_code-decoder-11/artifacts/o6adeyg4_Screenshot%202025-09-20%20213920.png",
     "https://images.unsplash.com/photo-1580489944761-15a19d654956",
     "https://images.unsplash.com/photo-1544005313-94ddf0286df2"
   ]
