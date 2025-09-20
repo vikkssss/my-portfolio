@@ -18,21 +18,22 @@ const Education = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {/* University Info */}
-          <Card className="md:col-span-1 border border-[#8A5A94]/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2a2a2a]">
-            <CardHeader className="bg-[#8A5A94] text-white border-b border-[#8A5A94]/20">
-              <div className="flex items-center">
-                <GraduationCap className="mr-3" size={24} />
+          <Card className="md:col-span-1 border border-[#8A5A94]/20 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-[#2a2a2a] group overflow-hidden">
+            <CardHeader className="bg-[#8A5A94] text-white border-b border-[#8A5A94]/20 group-hover:bg-[#A885C4] transition-colors duration-300 relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              <div className="flex items-center relative z-10">
+                <GraduationCap className="mr-3 group-hover:rotate-12 transition-transform duration-300" size={24} />
                 <CardTitle className="text-lg">University</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="p-6">
               <div className="space-y-4">
-                <div>
+                <div className="group-hover:scale-105 transition-transform duration-300">
                   <h3 className="font-bold text-[#FBF5E5] text-lg">{education.university}</h3>
                   <p className="text-[#FBF5E5]/70">{education.degree}</p>
                 </div>
-                <div className="flex items-center text-[#A885C4]">
-                  <Calendar size={16} className="mr-2" />
+                <div className="flex items-center text-[#A885C4] group-hover:text-[#8A5A94] transition-colors duration-300">
+                  <Calendar size={16} className="mr-2 group-hover:scale-110 transition-transform duration-300" />
                   <span className="font-medium">{education.year}</span>
                 </div>
               </div>
