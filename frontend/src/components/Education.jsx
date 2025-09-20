@@ -58,20 +58,20 @@ const Education = () => {
             </CardContent>
           </Card>
 
-          {/* Achievements */}
-          <Card className="md:col-span-1 border border-[#8A5A94]/20 shadow-lg hover:shadow-xl transition-shadow duration-300 bg-[#2a2a2a]">
-            <CardHeader className="bg-[#8A5A94] text-white border-b border-[#8A5A94]/20">
+          {/* Activities & Involvement */}
+          <Card className="md:col-span-1 border border-[#8A5A94]/20 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2 bg-[#2a2a2a] group">
+            <CardHeader className="bg-[#8A5A94] text-white border-b border-[#8A5A94]/20 group-hover:bg-[#A885C4] transition-colors duration-300">
               <div className="flex items-center">
-                <Award className="mr-3" size={24} />
-                <CardTitle className="text-lg">Achievements</CardTitle>
+                <Users className="mr-3 group-hover:scale-110 transition-transform duration-300" size={24} />
+                <CardTitle className="text-lg">Activities & Involvement</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="p-6">
               <div className="space-y-4">
-                {education.achievements.map((achievement, index) => (
-                  <div key={index} className="flex items-start">
-                    <div className="w-3 h-3 bg-[#A885C4] rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-[#FBF5E5] font-medium">{achievement}</span>
+                {education.activities.map((activity, index) => (
+                  <div key={index} className="flex items-start group-hover:translate-x-2 transition-transform duration-300" style={{transitionDelay: `${index * 100}ms`}}>
+                    <div className="w-3 h-3 bg-[#A885C4] rounded-full mt-2 mr-3 flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></div>
+                    <span className="text-[#FBF5E5] font-medium">{activity}</span>
                   </div>
                 ))}
               </div>
