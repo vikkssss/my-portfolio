@@ -102,9 +102,9 @@ const Education = () => {
                   <div className="text-3xl font-bold text-[#A885C4] mb-2">3</div>
                   <div className="text-[#FBF5E5]/70">Major Achievements</div>
                 </div>
-                <div className="p-6 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20">
-                  <div className="text-3xl font-bold text-[#A885C4] mb-2">4.0</div>
-                  <div className="text-[#FBF5E5]/70">Learning Attitude</div>
+                <div className="p-6 bg-[#3a3a3a] rounded-lg border border-[#8A5A94]/20 hover:bg-[#4a4a4a] hover:border-[#A885C4]/40 hover:scale-105 transition-all duration-300 cursor-pointer group">
+                  <div className="text-3xl font-bold text-[#A885C4] mb-2 group-hover:scale-110 transition-transform duration-300">9.1</div>
+                  <div className="text-[#FBF5E5]/70 group-hover:text-[#FBF5E5] transition-colors duration-300">CGPA</div>
                 </div>
               </div>
             </CardContent>
