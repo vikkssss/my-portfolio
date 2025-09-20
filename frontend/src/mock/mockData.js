@@ -102,10 +102,10 @@ export const education = {
     "Software Engineering",
     "Machine Learning Fundamentals"
   ],
-  achievements: [
-    "Dean's List - Fall 2023",
-    "Hackathon Participant - TechFest 2024",
-    "CS Department Study Group Leader"
+  activities: [
+    "Participated in Daksh 2025 Hackathon",
+    "Participated in Smart India Hackathon",
+    "Club Member of 'The Arts Gumbal' - Official Arts Club of SASTRA University"
   ]
 };
 
