@@ -1,0 +1,118 @@
+// Mock data for Veeksha Aluvala's Portfolio
+
+export const personalInfo = {
+  name: "Veeksha Aluvala",
+  tagline: "Debugging Code & Decoding the Universe",
+  email: "vikki30.aluvala@gmail.com",
+  linkedin: "linkedin.com/in/veeksha-aluvala-0b7452361/",
+  profileImages: [
+    "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e",
+    "https://images.unsplash.com/photo-1580489944761-15a19d654956",
+    "https://images.unsplash.com/photo-1544005313-94ddf0286df2"
+  ]
+};
+
+export const aboutInfo = {
+  description: "Sophomore at SASTRA University, studying B.tech. Computer Science and Engineering, driven by an insatiable curiosity about, well... everything. You'll often find me three hours deep into YouTube rabbit holes—one minute I'm learning about quantum computing, the next I'm fascinated by ikea business case study, and somehow that leads me to the simulation theory.",
+  currentlyLearning: [
+    "React components/state/routing",
+    "Flask APIs/auth/CRUD", 
+    "Firebase (Firestore/Auth)",
+    "LLM integration",
+    "UX for student tools"
+  ],
+  hobbies: [
+    "Drawing/Painting",
+    "Listening to Music", 
+    "Reading Mystery Novels",
+    "Watching Animated Movies"
+  ]
+};
+
+export const skills = {
+  languages: [
+    { name: "C", level: "Intermediate", icon: "Code2" },
+    { name: "C++", level: "Intermediate", icon: "Code2" },
+    { name: "Python", level: "Intermediate", icon: "FileCode2" }
+  ],
+  webTech: [
+    { name: "HTML", level: "Learning", icon: "Globe" },
+    { name: "CSS", level: "Learning", icon: "Palette" },
+    { name: "JavaScript", level: "Learning", icon: "Zap" },
+    { name: "React.js", level: "Learning", icon: "Component" },
+    { name: "Flask", level: "Learning", icon: "Server" }
+  ],
+  tools: [
+    { name: "Firebase", level: "Learning", icon: "Database" },
+    { name: "Git", level: "Intermediate", icon: "GitBranch" }
+  ],
+  interests: [
+    { name: "AI", icon: "Brain" },
+    { name: "Cybersecurity", icon: "Shield" },
+    { name: "Quantum Computing", icon: "Atom" }
+  ]
+};
+
+export const projects = [
+  {
+    id: 1,
+    title: "Expense Tracker for Students",
+    problem: "Students lose track of small, frequent spends",
+    solution: "Category-based tracker with weekly insights and simple charts",
+    tech: ["Flask", "HTML", "CSS", "JavaScript"],
+    status: "MVP built",
+    nextSteps: "Auth + CSV export",
+    outcomeGoal: "Help users cut monthly spend by 10–15%",
+    image: "https://images.unsplash.com/photo-1638845604906-6c87bd9ddd01",
+    demoLink: "#",
+    githubLink: "#"
+  },
+  {
+    id: 2,
+    title: "AI-Integrated Gamified Career Companion",
+    problem: "Prep feels overwhelming and purely transactional",
+    solution: "Career guidance + mood tracking + journaling for emotional resilience",
+    tech: ["React", "LLM", "Firebase"],
+    status: "Frontend complete",
+    nextSteps: "Journaling analytics, streaks, AI integration",
+    outcomeGoal: "Improve study consistency and reduce burnout signals",
+    image: "https://images.unsplash.com/photo-1623824204241-f851d3bcfaf5",
+    demoLink: "#",
+    githubLink: "#"
+  }
+];
+
+export const education = {
+  university: "SASTRA University",
+  degree: "B.Tech Computer Science and Engineering",
+  year: "Sophomore (2nd Year)",
+  relevantCoursework: [
+    "Data Structures & Algorithms",
+    "Object-Oriented Programming",
+    "Database Management Systems",
+    "Computer Networks",
+    "Software Engineering",
+    "Machine Learning Fundamentals"
+  ],
+  achievements: [
+    "Dean's List - Fall 2023",
+    "Hackathon Participant - TechFest 2024",
+    "CS Department Study Group Leader"
+  ]
+};
+
+export const socialLinks = [
+  { name: "LinkedIn", url: "https://linkedin.com/in/veeksha-aluvala-0b7452361/", icon: "Linkedin" },
+  { name: "GitHub", url: "#", icon: "Github" },
+  { name: "Email", url: "mailto:vikki30.aluvala@gmail.com", icon: "Mail" }
+];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Coming Soon",
+    role: "Future Testimonial",
+    content: "Testimonials from collaborators and mentors will appear here.",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+  }
+];
