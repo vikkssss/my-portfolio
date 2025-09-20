@@ -156,21 +156,22 @@ const Projects = () => {
                 </div>
               </CardContent>
             </Card>
-          ))}
+          );
+          })}
         </div>
 
         {/* Testimonials Placeholder */}
         <div className="mt-20 text-center">
           <h3 className="text-2xl font-bold text-[#FBF5E5] mb-8">What Others Say</h3>
-          <Card className="max-w-2xl mx-auto border border-[#A35C7A]/20 shadow-lg bg-[#2a2a2a]">
+          <Card className="max-w-2xl mx-auto border border-[#8A5A94]/20 shadow-lg bg-[#2a2a2a]">
             <CardContent className="p-8 text-center">
-              <div className="w-16 h-16 bg-[#C890A7]/20 rounded-full mx-auto mb-4 flex items-center justify-center border border-[#A35C7A]/30">
+              <div className="w-16 h-16 bg-[#A885C4]/20 rounded-full mx-auto mb-4 flex items-center justify-center border border-[#8A5A94]/30">
                 <span className="text-2xl">💬</span>
               </div>
               <p className="text-[#FBF5E5]/60 italic">
                 "Testimonials from collaborators and mentors will appear here soon!"
               </p>
-              <p className="text-[#C890A7] font-medium mt-4">Coming Soon</p>
+              <p className="text-[#A885C4] font-medium mt-4">Coming Soon</p>
             </CardContent>
           </Card>
         </div>
